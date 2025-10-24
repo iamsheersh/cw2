@@ -1,22 +1,121 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chhath Puja Festival</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f3e8; 
+            text-align: center;
+            margin: 0; 
+            padding-top: 50px; 
+            padding-bottom: 50px; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
-<html>
+        header {
+            background-color: #ff9933; 
+            color: white;
+            padding: 5px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        main {
+            flex-grow: 1; 
+            padding: 20px;
+        }
 
-<body style="font-family: Arial, sans-serif; background-color: yellow; text-align: center; margin: 50px;" >
+        h2 {
+            color: #333;
+            margin-top: 30px;
+        }
+        
+        /* 💡 FIX: Updated Button Styling for better visibility and contrast */
+        button {
+            background-color: #007bff; /* Changed to a contrasting blue */
+            color: white;
+            border: 2px solid #0056b3; /* Added a dark border for definition */
+            padding: 12px 25px; /* Slightly larger padding */
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+            margin-top: 20px; /* Added margin above the button */
+            box-shadow: 0 4px #0056b3; /* Added a shadow to make it look 3D */
+            display: block; /* Make it a block element */
+            margin-left: auto; /* Center the block element */
+            margin-right: auto; /* Center the block element */
+        }
+        button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 2px #004085; /* Flatter shadow on hover */
+            transform: translateY(2px); /* Slight press effect */
+        }
 
-<h2>Click Event Example</h2>
+        #demo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #d9534f; 
+            min-height: 30px; 
+            margin-top: 10px;
+        }
 
-<button onclick="changeText()">Click Me</button>
+        marquee {
+            background-color: #ffe0b2; 
+            color: #007bff;
+            padding: 5px 0;
+            font-size: 20px;
+            border: 1px solid #ff9933;
+            margin-top: 20px;
+        }
 
-<marquee STYLE="background-color:yellow;>HAPPY CHHATH PUJA</marquee>
-<script>
+        footer {
+            background-color: #ff9933; 
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 10;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
 
-function changeText() {
+    <header>
+        <h1>🙏 Chhath Puja Festival Celebration 🙏</h1>
+    </header>
 
-document.getElementByld("demo").innerHTML = "HAPPY CHHATH PUJA";
+    <main>
+    <h1>🌄</h1>
+        
+        <button onclick="changeText()">Click for Wishes</button>
+        
+        <p id="demo">Click the button to see the greeting.</p> 
+        
+        <marquee style="background-color:#ffe0b2;">
+            A Festival of Devotion to the Sun God (Surya Dev) and Chhathi Maiya.
+        </marquee>
+    </main>
 
-}
+    <footer>
+        <p>&copy; 2025 Chhath Puja Greetings | Dedicated to Surya Devta</p>
+    </footer>
 
-</script>
-</body> 
+    <script>
+        function changeText() {
+            document.getElementById("demo").innerHTML = "HAPPY CHHATH PUJA 🌅";
+        }
+    </script>
+</body>
 </html>
